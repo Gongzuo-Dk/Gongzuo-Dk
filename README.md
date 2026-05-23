@@ -2,7 +2,7 @@
 
 **Junior Backend Developer** — Python · Django · Django REST Framework · PostgreSQL
 
-I'm a self-taught backend developer based in Ukraine, focused on building clean, well-structured REST APIs and Django applications.
+I'm a Junior Backend Developer based in Ukraine, focused on building clean, well-structured REST APIs and Django applications.
 ---
 
 ## 🛠 Tech Stack
