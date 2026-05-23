@@ -61,7 +61,7 @@ Full-stack Django app with authentication, task/category CRUD, and smart filteri
 
 ---
 
-### [Blog App](https://gongzuodk.pythonanywhere.com/) · [Live](https://gongzuodk.pythonanywhere.com/)
+### [Blog App](https://github.com/Gongzuo-Dk/my-blog-project) · [Live](https://gongzuodk.pythonanywhere.com/)
 Content-driven Django blog with full admin management and text search.
 
 - Pinned posts, theme/category filtering, full-text search with input validation
