@@ -1,16 +1,80 @@
-## Hi there 👋
+# Hi, I'm Daniel 👋
 
-<!--
-**Gongzuo-Dk/Gongzuo-Dk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Junior Backend Developer** — Python · Django · Django REST Framework · PostgreSQL
 
-Here are some ideas to get you started:
+I'm a self-taught backend developer based in Ukraine, focused on building clean, well-structured REST APIs and Django applications.
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Tech Stack
+
+**Backend**
+`Python` `Django` `Django REST Framework` `PostgreSQL`
+
+**Auth**
+`dj-rest-auth` `django-allauth` `Google OAuth2` `Token Authentication`
+
+**Testing**
+`pytest` `pytest-django`
+
+**Deployment**
+`Railway` `Gunicorn` `WhiteNoise` `python-decouple`
+
+---
+
+## 📁 Projects
+
+### [Expense Tracker API](https://github.com/Gongzuo-Dk/expense-tracker-drf)
+Pure REST API built with Django REST Framework and PostgreSQL. No templates — JSON only.
+
+- Token auth + Google OAuth2 via django-allauth
+- Ownership enforced at queryset level — users never see each other's data
+- Custom `/summary/` and `/by-category/` endpoints using ORM aggregations (`Sum`, `Count`, `Avg`, `annotate`)
+- Filtering by category, date range, and amount range
+- pytest suite — 19 tests covering auth, ownership, cross-user 404s, and business logic
+- Full README with endpoint docs and request/response examples
+
+`Python` `Django` `DRF` `PostgreSQL` `pytest` `Railway`
+
+---
+
+### [WeatherApp](https://github.com/Gongzuo-Dk/weather-app) · [Live](https://weatherapp-production-cc78.up.railway.app/)
+Django app consuming the OpenWeatherMap API — no database, pure service layer architecture.
+
+- All external API logic isolated in `services.py` — views stay thin
+- Geocoding flow: city name → coordinates → weather
+- Current weather + 5-day forecast with Unix timestamp conversion
+- Three template states: empty, error, data
+
+`Python` `Django` `OpenWeatherMap API` `Railway`
+
+---
+
+### [Task Manager](https://github.com/Gongzuo-Dk/task-manager) · [Live](https://web-production-f102b.up.railway.app/)
+Full-stack Django app with authentication, task/category CRUD, and smart filtering.
+
+- Full auth system — register, login, logout, password change
+- Smart date filters — Overdue, Today, Next 7 Days, Later, No Date
+- Django signals for auto Profile creation on registration
+- Context processors, custom 404/500 pages, ownership protection
+
+`Python` `Django` `PostgreSQL` `Railway`
+
+---
+
+### [Blog App](https://gongzuodk.pythonanywhere.com/) · [Live](https://gongzuodk.pythonanywhere.com/)
+Content-driven Django blog with full admin management and text search.
+
+- Pinned posts, theme/category filtering, full-text search with input validation
+- Pagination, default image fallback, responsive navbar
+
+`Python` `Django` `SQLite` `PythonAnywhere`
+
+---
+
+## 📫 Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Danylo_Kulynych-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danylo-kulynych/)
+
+---
+
+*Open to Junior Backend Python / Django roles — remote.*
