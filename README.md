@@ -23,7 +23,7 @@ I'm a Junior Backend Developer based in Ukraine, focused on building clean, well
 
 ## 📁 Projects
 
-### [Expense Tracker API](https://github.com/Gongzuo-Dk/expense-tracker-drf)
+### [Expense Tracker API](https://github.com/Gongzuo-Dk/expense-tracker-drf) · [Live](https://web-production-82253a.up.railway.app/)
 Pure REST API built with Django REST Framework and PostgreSQL. No templates — JSON only.
 
 - Token auth + Google OAuth2 via django-allauth
