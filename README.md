@@ -37,6 +37,20 @@ Pure REST API built with Django REST Framework and PostgreSQL. No templates — 
 
 ---
 
+### [Bookshelf API](https://github.com/Gongzuo-Dk/bookshelf-api) · [Live](https://bookshelf-api-production-d927.up.railway.app/)
+Personal reading tracker REST API built with Django REST Framework and PostgreSQL. No templates — JSON only.
+- Token auth via dj-rest-auth — register, login, receive token, authenticate all requests
+- Ownership enforced at queryset level — users never see each other's books
+- Custom `/stats/` endpoint using ORM aggregations (`Avg`, `Count`, `annotate`) — favourite genre via GROUP BY, average rating, goal progress
+- Reading goal tracking with calculated progress percentage across `/goal/` and `/stats/`
+- `SerializerMethodField` for computed fields — reading progress % returned without being stored in the database
+- Cross-field serializer validation — rating only accepted on completed books, handles PATCH partial updates correctly
+- pytest suite — 96% coverage across auth, ownership, cross-user 404s, and aggregation math
+- Full README with endpoint docs and request/response examples
+`Python` `Django` `DRF` `PostgreSQL` `pytest` `Railway`
+
+---
+
 ### [WeatherApp](https://github.com/Gongzuo-Dk/weather-app) · [Live](https://weatherapp-production-cc78.up.railway.app/)
 Django app consuming the OpenWeatherMap API — no database, pure service layer architecture.
 
